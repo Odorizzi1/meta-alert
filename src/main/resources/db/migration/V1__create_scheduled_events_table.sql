@@ -1,0 +1,6 @@
+CREATE TABLE scheduled_events (
+    id SERIAL PRIMARY KEY,
+    event_time TIMESTAMP NOT NULL,
+    status VARCHAR(20) DEFAULT 'PENDING',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
