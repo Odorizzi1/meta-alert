@@ -8,5 +8,5 @@ data class ScheduledEvent(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
     val eventTime: LocalDateTime,
-    var status: String
+    var status: String,
 )
