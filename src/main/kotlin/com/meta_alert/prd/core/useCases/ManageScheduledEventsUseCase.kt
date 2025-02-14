@@ -10,6 +10,10 @@ class ManageScheduledEventsUseCase(
 
         pendingEvents.forEach { event ->
 
+            // cada registro deverá obter o id do metabase
+            // gerar a lógica para obter o count de registros
+            // chamar o webhook do slack referente ao seu id
+
 
         }
     }
