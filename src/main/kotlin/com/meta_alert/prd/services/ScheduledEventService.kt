@@ -13,16 +13,8 @@ class ScheduledEventService(
         return repository.save(event)
     }
 
-    fun getPendingEvents(): List<ScheduledEvent> {
-        val now = LocalDateTime.now()
-        return repository.findByStatusAndEventTimeBefore("PENDING", now)
+    fun getEvent(status:String):List<ScheduledEvent>{
+        return repository.getEvents(status)
     }
 
-    fun getEventById(id: Long): ScheduledEvent? {
-        return repository.findById(id)
-    }
-
-    fun deleteEvent(id: Long) {
-        repository.deleteById(id)
-    }
 }

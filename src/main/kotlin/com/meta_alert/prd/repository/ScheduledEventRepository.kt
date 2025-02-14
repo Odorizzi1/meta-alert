@@ -16,4 +16,14 @@ class ScheduledEventRepository : ScheduledEventRepository {
         return entityManager.merge(event)
     }
 
+    override fun getEvents(status: String): List<ScheduledEvent> {
+        val query = entityManager.createQuery(
+            "SELECT e FROM ScheduledEvent e WHERE e.status = :status",
+            ScheduledEvent::class.java
+        )
+        query.setParameter("status", status)
+        return query.resultList
+    }
+
+
 }

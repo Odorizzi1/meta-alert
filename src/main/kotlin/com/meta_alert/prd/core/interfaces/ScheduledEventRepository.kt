@@ -4,5 +4,5 @@ import com.meta_alert.model.ScheduledEvent
 
 interface ScheduledEventRepository {
 fun save(event : ScheduledEvent):ScheduledEvent
-
+fun getEvents(status: String): List<ScheduledEvent>
 }
