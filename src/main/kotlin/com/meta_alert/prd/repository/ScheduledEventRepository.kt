@@ -1,11 +1,11 @@
-package com.meta_alert.repository
+package com.meta_alert.prd.repository
 
-import com.meta_alert.model.ScheduledEvent
+
 import com.meta_alert.prd.core.interfaces.ScheduledEventRepository
+import com.meta_alert.prd.model.ScheduledEvent
 import jakarta.persistence.EntityManager
 import jakarta.persistence.PersistenceContext
 import org.springframework.stereotype.Repository
-import java.time.LocalDateTime
 
 @Repository
 class ScheduledEventRepository : ScheduledEventRepository {

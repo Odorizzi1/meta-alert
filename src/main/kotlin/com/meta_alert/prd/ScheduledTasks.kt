@@ -1,7 +1,6 @@
-package com.meta_alert.scheduler
+package com.meta_alert.prd
 
 import com.meta_alert.prd.core.useCases.ManageScheduledEventsUseCase
-import com.meta_alert.service.ScheduledEventService
 import org.springframework.scheduling.annotation.Scheduled
 import org.springframework.stereotype.Component
 

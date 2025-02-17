@@ -1,4 +1,4 @@
-package com.meta_alert.prd.adapters.gateways
+package com.meta_alert.prd.adapter.gateways
 
 import org.springframework.http.HttpEntity
 import org.springframework.http.HttpHeaders

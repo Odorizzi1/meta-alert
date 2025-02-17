@@ -1,4 +1,4 @@
-package com.meta_alert.model
+package com.meta_alert.prd.model
 
 import jakarta.persistence.*
 import java.time.LocalDateTime

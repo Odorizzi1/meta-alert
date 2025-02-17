@@ -1,9 +1,9 @@
-package com.meta_alert.service
+package com.meta_alert.prd.services
 
-import com.meta_alert.model.ScheduledEvent
-import com.meta_alert.repository.ScheduledEventRepository
+import com.meta_alert.prd.model.ScheduledEvent
+import com.meta_alert.prd.repository.ScheduledEventRepository
+
 import org.springframework.stereotype.Service
-import java.time.LocalDateTime
 
 @Service
 class ScheduledEventService(
